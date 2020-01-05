@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset ="utf-8">
+    <title>
+      Change Content
+    </title>
+    <style>
+      .bluebox{
+        background-color: #3A5795;
+        color: white;
+        height: auto;
+        width:auto;
+      }
+	  .yellowbox{
+		background-color: rgb(222, 224, 85);
+		height: auto;
+		width: auto;
+	  }
+	  .greenbox{
+		background-color: #31af37;
+		height: auto;
+		width: auto;
+	  }
+	  .great{
+		background-color:#4bb935;
+		
+	  }
+  </style>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </head>
+  
+  <body>
+    <div class="bluebox" id="facebook">
+      <p>
+        Facebook is 
+        <span id="great">
+          great
+        </span>
+        .
+      </p>
+    <p class="orange">para2</p>  
+    </div>
+    <div class="yellowbox" id="apple">
+      <p>
+        Apple.
+      </p>
+        <ul>
+        <li>BMW</li>
+        <li>Audi</li>
+        <li>Mercedes</li>
+        </ul>
+     <p><a href="http://www.google.com">this is a link</a></p> 
+         <p><a>this is another link</a></p> 
+    </div>
+      <p>a paragraph</p>
+    <div class="greenbox">
+      <p>
+        Microsoft.
+      </p>
+
+         <ul>
+        <li>BMW</li>
+        <li>Audi</li>
+        <li>Mercedes</li>
+        </ul>
+        <table>
+        <tr><th>Ohone</th><th>model</th></tr>
+            <tr><td>Apple</td><td>i7</td></tr>
+            <tr><td>Apple</td><td>i7</td></tr>
+            <tr><td>Apple</td><td>i7</td></tr>
+            <tr><td>Apple</td><td>i7</td></tr>
+        </table>
+        
+        <p>Type Your Name: <input id="input"> <button type="submit" id="submit">Submit</button></p>
+    </div>
+	
+	<button id="1">Change Facebook Style</button>
+	<button id="2">Change Apple Style</button>
+	<script>
+ $(function(){
+    // $("p").click(function(){
+        // $("p").css("background-color","#f324d7");
+        // $(this).css("background-color","#f324d7");
+   $("p").mouseover(function(){
+     $(this).css("background-color","#f324d7");
+   }); 
+     $("p").mouseout(function(){
+         $(this).css("background-color","");
+    // });
+     });
+     $("input").focus(function(){
+         $(this).css("background-color","#f33924");
+     });
+     $("input").keyup(function(){
+         $(this).css("background-color","#fff569"); 
+     });
+    $("#submit").click(function(){
+    $("#input").css("background-color","#ffffff");
+        $("#input").val("");
+    }); 
+     
+ });
+        
+	</script>
+  </body>
+  
+  
+</html>
